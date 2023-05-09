@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Callback</title>
+  <script>
+    window.onload = function() {
+      // Get the OAuth response parameters from the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const oauth_token = urlParams.get('oauth_token');
+      const oauth_verifier = urlParams.get('oauth_verifier');
+
+      // Handle the OAuth response here (e.g., display a message, store the tokens, etc.)
+    };
+  </script>
+</head>
+<body>
+  <h1>Twitter Callback</h1>
+  <p>This page handles the Twitter authentication callback.</p>
+</body>
+</html>
